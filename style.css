@@ -1,0 +1,118 @@
+@font-face {
+    font-family: odinFont;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+}
+
+#brand-section {
+    height: 100vh;
+    width: 35%;
+    background-image: url("imgs/alexander-andrews-yOIT88xWkbg-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 30%;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 2em;
+    color: white;
+    font-family: odinFont;
+}
+
+#title img {
+    width: 15%;
+}
+
+#main-section {
+    width: 65%;
+}
+
+#description {
+    margin: 3%;
+    width: 70%;
+}
+
+form {
+    height: fit-content;
+}
+
+#form-title {
+    padding: 3%;
+}
+
+#form-container {
+    height: fit-content;
+    padding-bottom: 3%;
+    box-shadow: -1px 5px 15px -4px #656565
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-column input {
+    font-size: 1em;
+    padding: 2% 3%;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 2.5px;
+    outline: none;
+}
+
+.form-column input:focus {
+    border: 1.5px solid blue;
+    box-shadow: 0px 4px 15px -4px #868686;
+}
+
+.form-column input:invalid {
+    border: 1.5px solid red;
+    box-shadow: 0px 4px 15px -4px #868686;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1% 5% 1% 3%;
+}
+
+#submit-btn {
+    margin: 3%;
+    background-color: #0e5263;
+    color: white;
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 2% 5%;
+    outline: none;
+    border: none;
+}
+
+#submit-btn:hover {
+    cursor: pointer;
+}
+
+#login-message {
+    margin: 2% 3%;
+}
+
+#login-message a {
+    text-decoration: none;
+    color: #0e5263;
+}
